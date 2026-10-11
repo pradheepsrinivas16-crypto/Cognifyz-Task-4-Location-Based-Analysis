@@ -49,6 +49,37 @@ Use only a dataset you are authorized to access and share. If the notebook finds
 
 See [`requirements.txt`](requirements.txt).
 
+## Visual Results
+
+### Restaurant Density in Delhi-NCR
+![Restaurant density in Delhi-NCR](delhi-ncr-density.png)
+
+The hexbin plot shows where restaurants cluster within the Delhi-NCR coordinate window. Placeholder coordinates at (0, 0) are excluded from the mapped data.
+
+### City-Level Comparison
+![Top cities by restaurant count](city-restaurant-counts.png)
+
+Restaurant counts are highly concentrated in a small number of cities, so the dataset should not be interpreted as a balanced global sample.
+
+![Top-rated eligible cities](city-average-ratings.png)
+
+Only cities with at least 20 rated restaurants are included in this ranking. Smaller groups can produce unstable averages.
+
+### Cuisine Distribution in Major Cities
+![Cuisine distribution in New Delhi, Gurgaon, and Noida](major-city-cuisine-distribution.png)
+
+Multi-cuisine restaurant records are split across cuisine labels, so a single restaurant can contribute to more than one cuisine count.
+
+### Top-Rated Delhi-NCR Localities
+![Top-rated localities in Delhi-NCR](delhi-ncr-top-localities.png)
+
+Locality comparisons include only groups with at least 10 rated restaurants. The plot includes approximate 95% confidence intervals; results for smaller samples would be less stable.
+
+### Price Range and Ratings
+![Price range rating analysis](price-range-rating-analysis.png)
+
+These comparisons use rated restaurants only. They show association between price range and rating rather than a causal effect.
+
 ## Limitations
 
 - The dataset is heavily concentrated in Delhi-NCR and does not represent all cities equally.
